@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --background: #f7f5ef;
+  --foreground: #151515;
+  --muted: #6f6a61;
+  --line: #d9d2c6;
+  --panel: #fffcf5;
+  --ink: #191918;
+  --accent: #0f766e;
+  --accent-strong: #0b5f59;
+  --coral: #d85f45;
+  --sun: #f2bb3c;
+  --blue: #3569a8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(247, 245, 239, 0.86), rgba(247, 245, 239, 1)),
+    url("https://images.unsplash.com/photo-1497015289639-54688650d173?auto=format&fit=crop&w=2400&q=80");
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: rgba(15, 118, 110, 0.2);
+}
+
+.shell {
+  min-height: 100vh;
+  background: rgba(247, 245, 239, 0.9);
+}
+
+.container {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.focus-ring:focus-visible {
+  outline: 3px solid rgba(15, 118, 110, 0.28);
+  outline-offset: 2px;
+}
